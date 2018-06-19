@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li><a href="{% url 'with:with_app' %}">app_name がある場合</a></li>
+        <li><a href="{% url 'without:without_app' %}">app_name がない場合</a></li>
+        <li><a href="{% url 'replaced:over_app' %}">app_name が上書きされた場合</a></li>
+        <li><a href="{% url 'overwrite:over_app' %}">app_name がそのままの場合</a></li>
+    </ul>
+</body>
+</html>
